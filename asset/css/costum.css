@@ -1,0 +1,21 @@
+.btn-group {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    margin-top: 5px;
+}
+
+
+
+#id{
+  text-align: center;
+}
+
+
+
+.btn.btn-primary {
+    background: #F96D00;
+    border-color: #F96D00;
+    color: #fff;
+    align:center;
+}
