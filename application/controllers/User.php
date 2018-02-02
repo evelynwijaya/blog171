@@ -7,6 +7,7 @@ class User extends CI_Controller {
      parent::__construct();
 
     $this->load->model('user_model');
+    $this->load->model('blog_model');
 
   }
 
@@ -43,6 +44,7 @@ class User extends CI_Controller {
         $this->session->nama = $user['nama'];
 
         // kembali ke halaman depan
+
         redirect('home');
 
       } else {
@@ -67,5 +69,13 @@ class User extends CI_Controller {
     $this->load->template('beranda');
 
   }
+
+  // public function profil($nama){
+  //   $sql = "SELECT nama FROM users";
+  //
+  //   $hasil= mysqli_query($db, $sql);
+  //     $this->load->template('profil');
+  //
+  // }
 
 }

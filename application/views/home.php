@@ -12,7 +12,7 @@
       </div>
     </section>
     <!-- END section -->
-    <section class="ftco-section bg-light" id="section-offer">
+    <!-- <section class="ftco-section bg-light" id="section-offer">
       <div class="container">
 
         <div class="row">
@@ -33,14 +33,13 @@
                   <img src="asset/images/offer_1.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
                   <div class="media-body p-md-5 p-4">
                     <h5 class="text-primary">
-                       <?php echo
-                      " Judul : ".$data['judul']."" ;
-                        ?>  </h5>
+                         </h5>
                     <h5 class="mt-0 h4"></h5>
                     <p class="mb-4"></p>
 
                     <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Baca Selengkapnya</a></p>
                   </div>
+
                 </div>
               </div>
 
@@ -153,10 +152,10 @@
 
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- END section -->
 
-    <section class="ftco-section" id="section-menu">
+    <!-- <section class="ftco-section" id="section-menu">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center mb-5 ftco-animate">
@@ -379,7 +378,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- END section -->
 
     <section class="ftco-section bg-light" id="section-news">
@@ -395,17 +394,36 @@
             </div>
           </div>
 
+
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="media d-block mb-4 text-center ftco-media ftco-animate">
               <img src="asset/images/offer_1.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
               <div class="media-body p-md-5 p-4">
-                <h5 class="mt-0 h4">In Taste Restaurant</h5>
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <h5 class="mt-0 h4">
 
-                <p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
+                  <?php
+                  foreach( $blogs as $blog ){
+                  echo "<a href='/blog/" . $blog['blog_ID'] ."'>" . $blog['judul']."<a><br><br>";
+                }
+                ?>
+                </h5>
+                <p class="mb-4">
+                  <?php
+                  foreach( $blogs as $blog ){
+                  echo "<a href='/blog/" . $blog['blog_ID'] ."'>" . $blog['bahan']."<a><br><br>";
+                }
+                ?>
+                </p>
+
+                <!-- <p class="mb-0"><a href="/blog" class="btn btn-primary btn-sm">Read More</a></p> -->
               </div>
             </div>
           </div>
+
+
+
+
+          <!--
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="media d-block mb-4 text-center ftco-media ftco-animate">
               <img src="asset/images/offer_2.jpg" alt="Free Template by Free-Template.co" class="img-fluid">
@@ -431,7 +449,7 @@
         </div>
       </div>
     </section>
-    <!-- END section -->
+    END section
 
     <section class="ftco-section" id="section-gallery">
       <div class="container">
@@ -481,7 +499,7 @@
         </div>
       </div>
     </section>
-    <!-- END section -->
+    <!-END section -->
 
     <section class="ftco-section bg-light" id="section-contact">
       <div class="container">

@@ -17,6 +17,11 @@
       <label for="message" class="sr-only">Cara Membuat</label>
       <textarea cols="30" rows="10" class="form-control" placeholder="Cara membuat" name="cara"></textarea>
     </div>
+    <br>
+    Foto
+    <br>
+    <input type="file" name="foto">
+    <br>
     <div class="form-group">
       <input type="submit" class="btn btn-primary btn-lg" value="Post">
     </div>

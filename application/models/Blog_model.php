@@ -31,7 +31,8 @@ class Blog_model extends CI_Model {
                 'bahan' => $this->input->post('bahan'),
                 'cara' => $this->input->post('cara'),
                 'user_ID' => $this->session->uid,
-                'tanggal' => date('Y-m-d H:i:s')
+                'tanggal' => date('Y-m-d H:i:s'),
+                //'foto' => $this->input->post('foto')
               ];
       // simpan data ke dalam session
       $this->session->uid = $blog['judul'];
