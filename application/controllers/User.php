@@ -16,7 +16,7 @@ class User extends CI_Controller {
 
    public function register(){
      // tampilkan form registrasi user
-     $this->load->template('footer');
+     $this->load->template('form_register');
    }
 
    public function login(){
@@ -65,10 +65,7 @@ class User extends CI_Controller {
     redirect('/');
   }
 
-  public function beranda(){
-    $this->load->template('beranda');
 
-  }
 
   // public function profil($nama){
   //   $sql = "SELECT nama FROM users";

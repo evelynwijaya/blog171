@@ -12,13 +12,9 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->template('beforelogin');
-	}
-
-	public function home()
-	{
 		$data['blogs'] = $this->blog_model->blogs();
 		$this->load->template('home', $data);
 	}
+
 
 }

@@ -7,7 +7,7 @@ class Blog extends CI_Controller {
     parent::__construct();
 
     $this->load->model('blog_model');
-
+      $this->load->model('user_model');
   }
 
 
@@ -17,8 +17,15 @@ class Blog extends CI_Controller {
 
 	}
 
-  public function post()  {
+  public function post(){
+    if(isset($this->session->uid)){
+
     $this->load->template('beranda');
+
+  }
+    else {
+      redirect('user/login');
+  }
   }
 
 

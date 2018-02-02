@@ -3,6 +3,7 @@
 </div>
 
 <form action="/user/signin" method="post" id="form">
+  <h1>LOGIN</h1>
     <div class="col-md-6">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -14,7 +15,7 @@
   </div>
   <div class="form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
   <button type="submit" class="btn btn-primary" align="center">Submit</button>
+  <a href="/user/reg">Not Register Yet?</a>
 </form>

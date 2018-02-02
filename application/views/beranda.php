@@ -17,10 +17,14 @@
       <label for="message" class="sr-only">Cara Membuat</label>
       <textarea cols="30" rows="10" class="form-control" placeholder="Cara membuat" name="cara"></textarea>
     </div>
-    <br>
-    Foto
-    <br>
-    <input type="file" name="foto">
+    <!-- untuk attach file -->
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Upload Foto Makanan</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+    </form>
+    <!-- akhir attach file -->
     <br>
     <div class="form-group">
       <input type="submit" class="btn btn-primary btn-lg" value="Post">
